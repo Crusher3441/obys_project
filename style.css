@@ -154,6 +154,34 @@ html, body{
     color: transparent;
 }
 
-#hero3{
+#hero3 {
     display: flex;
+    align-items: center;
+    gap: 1vw;
+    white-space: nowrap;
+    overflow: visible;
+}
+
+#hero3 h1{
+    
+    border-bottom: 5px solid white;
+    width: fit-content;
+    padding-bottom: 1vh;
+}
+#hero3 span{
+    display: inline-block;
+    
+    font-size: 7vw;
+    text-transform: uppercase;
+    line-height: 7vw;
+    font-weight: 400;
+}
+
+#hero3 span:hover{
+    -webkit-text-stroke: 2px #ffffff;
+    color: transparent;
+}
+
+#hero3 h1:hover{
+    border-bottom: none;
 }
