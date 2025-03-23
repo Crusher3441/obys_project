@@ -60,10 +60,9 @@ function loadingAnimation(){
     tl.to("#loader",{
         display:'none'
     })
-    tl.from(".hero h1",{
+    tl.from(".hero h1,#hero3 span",{
         y:100,
         stagger:0.2
-        
     })
 }
 
