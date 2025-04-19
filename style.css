@@ -244,6 +244,65 @@ body{
   min-height: 100vh;
   width: 100vw;
   background-color: #1f1811;
+  padding: 7vh;
+  margin-bottom: 20vh;
+}
+
+#pg3 h1{
+  font-size: 7vw;
+  text-transform: uppercase;
+  position: relative;
+  margin-left: 22%;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+#pg3 h1::before{
+  content: "02";
+  position: absolute;
+  font-family: sans-serif;
+  font-size: 3vw;
+  font-weight: 100;
+  margin-left: -10%;
+  margin-top: 2%;
+}
+
+#pg3 .underline{
+  height: 2px;
+  width: 84%;
+  background-color: white;
+  margin: 2.5vw 20vh;
+}
+
+#image-div-container{
+  
+  background-color: red;
+  padding: 1vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.image-div{
+  height: 33vw;
+  width: 24vw;
+  overflow: hidden;
+  position: relative;
+  background-color: #3F7DF4;
+  flex-shrink: 0;
+}
+
+.image-div:nth-child(1){
+  height: 29vw;
+  width: 21vw;
+}
+
+.image-div img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 #pg4 {
@@ -328,6 +387,51 @@ body{
     width: 100%;
 }
 
+.elem , .elem2{
+  white-space: nowrap;
+  overflow-x: hidden;
+  margin-bottom: -2vw;
+}
+
+.elem h1{
+  font-size: 7vw;
+  -webkit-text-stroke: 1px #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: transparent;
+  display: inline-block;
+  margin-right: 16px;
+  animation-name: ani;
+  animation-duration: 13s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.elem2 h1 {
+  font-size: 7vw;
+  -webkit-text-stroke: 1px #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: transparent;
+  display: inline-block;
+  margin-right: 16px;
+  
+  animation-name: ani;
+  animation-duration: 13s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  
+}
+
+@keyframes ani {
+  from{
+      transform: translateX(0);
+  }
+  to{
+      transform: translateX(calc(-100% - 20px));
+  }
+}
 
 
 
@@ -337,7 +441,7 @@ body{
 
 #letscreate{
     height: 100vh;
-    width: 100%;
+    width: 72vw;
     padding: 5vh;
     margin-left: 30%;
 }
@@ -355,3 +459,7 @@ body{
     margin: 5vh 0;
 }
 
+#contact{
+  display: flex;
+  justify-content: space-between;
+} 
