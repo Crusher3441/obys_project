@@ -16,7 +16,7 @@ body{
     overflow-x: hidden;
 }
 
-#crsr {
+/* #crsr {
   height: 35px;
   width: 35px;
   border-radius: 50%;
@@ -26,6 +26,13 @@ body{
   mix-blend-mode: difference;
   border: 2px solid white;
   transform: translate(-50%, -50%);
+} */
+
+.mousefollower{
+  border: 2px solid #fff;
+  background-color: rgb(255,255,255);
+  scale: 2;
+  mix-blend-mode: difference;
 }
 
 #loader {
@@ -109,13 +116,15 @@ body{
 
 #main {
   position: relative;
-  background-color: #111111;
+  /* background-color: #111111; */
+  background-color: #0B0B0B;
 }
 
 #pg1 {
   height: 100vh;
   width: 100vw;
-  background-color: #000000;
+  /* background-color: #000000; */
+  background-color: #0B0B0B;
 }
 
 #pg1 #nav {
@@ -191,12 +200,23 @@ body{
   border-bottom: none;
 }
 
+#flag{
+  height: 25vw;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%,-50%);
+  z-index: -55;
+  opacity: 0;
+}
+
 #pg2 {
   height: 100vh;
   width: 100vw;
   padding-top: 20vh;
   position: relative;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
+  background-color: #0B0B0B;
+
 }
 
 .videocontainer {
@@ -206,6 +226,8 @@ body{
   top: 20%;
   left: 39.2%;
   background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .videocontainer img {
@@ -217,8 +239,8 @@ body{
 }
 
 .videocontainer video {
-  height: 95%;
-  width: 95%;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -243,7 +265,8 @@ body{
 #pg3 {
   min-height: 100vh;
   width: 100vw;
-  background-color: #1f1811;
+  /* background-color: #1f1811; */
+  background-color: #0B0B0B;
   padding: 7vh;
   margin-bottom: 20vh;
 }
@@ -274,19 +297,19 @@ body{
 }
 
 #image-div-container{
-  
-  background-color: red;
+  /* background-color: red; */
   padding: 1vw;
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  align-items: flex-start;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  gap: 50px;
 }
 
 .image-div{
-  height: 33vw;
-  width: 24vw;
+  height: 40vw;
+  width: 28vw;
   overflow: hidden;
   position: relative;
   background-color: #3F7DF4;
@@ -294,8 +317,17 @@ body{
 }
 
 .image-div:nth-child(1){
-  height: 29vw;
-  width: 21vw;
+  height: 32vw;
+  width: 25vw;
+}
+.image-div2{
+  margin-top: 10%;
+  height: 40vw;
+  width: 28vw;
+  overflow: hidden;
+  position: relative;
+  background-color: #3F7DF4;
+  flex-shrink: 0;
 }
 
 .image-div img{
@@ -304,11 +336,95 @@ body{
   object-fit: cover;
   object-position: center;
 }
+.image-div2 img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.page3-circle1{
+  height: 20vw;
+  width: 20vw;
+  margin-top: 20vh;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10vw;
+  position: relative;
+}
+
+.page3-circle1 svg{
+  height: 40%;
+}
+.page3-circle2{
+  position: relative;
+  height: 20vw;
+  width: 20vw;
+  /* margin-top: 20vh; */
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-left: 10vw; */
+}
+
+.page3-circle2 svg{
+  height: 40%;
+  rotate: -45deg;
+}
+
+.circle-in{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transition: all ease 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  scale: 0;
+  overflow: hidden;
+}
+
+.circle-in p{
+  font-size: 0.95vw;
+  color: #000;
+  font-weight: 500;
+  text-align: center;
+  width: 60%;
+  scale: 0;
+  transition: all ease 0.5s;
+  transition-delay: 0.3s;
+  opacity: 0;
+
+}
+
+.page3-circle1:hover .circle-in{
+  scale: 1;
+}
+.page3-circle1:hover p{
+  scale: 1;
+  opacity: 1;
+}
+.page3-circle2:hover .circle-in{
+  scale: 1;
+}
+.page3-circle2:hover p{
+  scale: 1;
+  opacity: 1;
+}
 
 #pg4 {
   min-height: 100vh;
   width: 100vw;
-  background-color: #1f1f1f;
+  /* background-color: #1f1f1f; */
 }
 
 #pg4content {
